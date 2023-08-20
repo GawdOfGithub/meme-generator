@@ -1,0 +1,173 @@
+/* Reset default margin and padding */
+body, div, h3, input, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall styling */
+body,html {
+  overflow: hidden; /* Prevent scrolling */
+  height:100%;
+}
+
+#head {
+  background-color: #4caf50;
+  padding: 10px;
+  text-align: center;
+}
+
+#head img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+#head h3 {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#fields {
+  padding: 10px;
+}
+
+#fields input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#fields input:focus {
+  border-color: #4caf50;
+}
+
+#button {
+  background-color: #4caf50;
+  padding: 10px;
+  text-align: center;
+}
+
+#button input {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button input:hover {
+  background-color: #45a049;
+}
+
+#image {
+  padding: 10px;
+  text-align: center;
+}
+
+#image img {
+  display: block;
+  margin: 0 auto;
+  max-height: 600px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+
+#textOverlayTop,
+#textOverlayBottom {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  font-family: Impact, Arial, sans-serif; /* Replace font-family with Impact */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  font-family: Impact, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#textOverlayTop {
+  bottom: auto;
+  top: 280px;
+}
+
+#textOverlayBottom {
+  top: auto;
+  bottom: 110px;
+}
+
+
+.exportButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4c53af;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.exportButton:hover {
+  background-color: #45a049;
+}
+#madeBy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  color:black;
+}
+
+#madeBy::before,
+#madeBy::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 30px;
+  background-color: #999;
+  margin: 0 10px;
+}
+
+#madeBy span {
+  font-weight: bold;
+}
+
